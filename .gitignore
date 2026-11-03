@@ -1,0 +1,11 @@
+# Binary builds
+*.o
+*.obj
+*.exe
+!build/bl_internal_v3.dll
+
+# IDE and temporary files
+.vscode/
+.idea/
+*.log
+*.tmp
