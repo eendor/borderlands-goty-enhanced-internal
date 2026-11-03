@@ -63,7 +63,7 @@ Built for research, practice, and camera/aimbot mechanics exploration.
 
 ### Build Command
 ```cmd
-g++.exe -shared -O2 -std=c++17 -static -static-libgcc -static-libstdc++ src\internal_esp_aimbot.cpp -o build\bl_internal_v3.dll -ld3d9 -ldwmapi -luser32 -lgdi32
+g++.exe -shared -O2 -std=c++17 -static -static-libgcc -static-libstdc++ src\main.cpp src\engine_tick.cpp -o build\bl_internal_v3.dll -lwinmm -lgdi32 -luser32 -lkernel32
 ```
 Or execute `build.bat`.
 

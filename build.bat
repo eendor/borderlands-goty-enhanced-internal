@@ -14,7 +14,7 @@ if %ERRORLEVEL% equ 0 (
 
 if not exist "build" mkdir "build"
 
-%GXX% -shared -O2 -std=c++17 -static -static-libgcc -static-libstdc++ src\internal_esp_aimbot.cpp -o build\bl_internal_v3.dll -ld3d9 -ldwmapi -luser32 -lgdi32
+%GXX% -shared -O2 -std=c++17 -static -static-libgcc -static-libstdc++ src\main.cpp src\engine_tick.cpp -o build\bl_internal_v3.dll -lwinmm -lgdi32 -luser32 -lkernel32
 
 if %ERRORLEVEL% equ 0 (
     echo [+] Success: build\bl_internal_v3.dll generated.
